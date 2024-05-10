@@ -1,0 +1,31 @@
+{
+  "goid": "6d2ca7e0a5c6c9f37dd0b124a6a26553",
+  "guid": "0ed53d22-bed8-424b-8b4e-68e3e40a9320",
+  "name": "Rest Api 3",
+  "resolutionPath": "/api3",
+  "serviceType": "WEB_API",
+  "checksum": "f195328319ceb80a361e9de583d7f5a04ba75c67",
+  "enabled": true,
+  "folderPath": "/myApis",
+  "methodsAllowed": [
+    "GET",
+    "POST",
+    "PUT",
+    "DELETE"
+  ],
+  "tracingEnabled": false,
+  "wssProcessingEnabled": false,
+  "laxResolution": false,
+  "policy": {
+    "code": {
+      "All": [
+        {
+          "HardcodedResponse": {
+            "body": "{\n    \"message\": \"Thanks for getting started at ${gateway.time}!\"\n}",
+            "contentType": "application/json; charset=UTF-8"
+          }
+        }
+      ]
+    }
+  }
+}

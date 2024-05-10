@@ -1,0 +1,37 @@
+{
+  "goid": "84449671abe2a5b143051dbdfdf7e716",
+  "guid": "7d879644-3fb3-4257-b535-19dc81c82982",
+  "name": "Rest Api 2",
+  "resolutionPath": "/api2",
+  "serviceType": "WEB_API",
+  "checksum": "d8630eede1015df89611a8ca692df8ba48483c30",
+  "enabled": true,
+  "folderPath": "/myApis",
+  "methodsAllowed": [
+    "GET",
+    "POST",
+    "PUT",
+    "DELETE"
+  ],
+  "tracingEnabled": false,
+  "wssProcessingEnabled": false,
+  "laxResolution": false,
+  "policy": {
+    "code": {
+      "All": [
+        {
+          "SetVariable": {
+            "expression": "hello api 2",
+            "variable": "service_specific_var"
+          }
+        },
+        {
+          "Include": {
+            "policyGuid": "a9f7163b-d17a-42e8-9b75-855ca6f67c08",
+            "policyName": "Generic API Template"
+          }
+        }
+      ]
+    }
+  }
+}

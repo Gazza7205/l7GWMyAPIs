@@ -1,0 +1,31 @@
+{
+  "goid": "982cc1ee7369c6ca5a7ae1e4ad8ba399",
+  "guid": "8674880d-b4cc-4ff0-a41c-0baf2b6e702e",
+  "name": "test headers",
+  "resolutionPath": "/testheaders",
+  "serviceType": "WEB_API",
+  "checksum": "79932e4739461dc99762400c4df822d6de815f75",
+  "enabled": true,
+  "folderPath": "/myApis",
+  "methodsAllowed": [
+    "GET",
+    "POST",
+    "PUT",
+    "DELETE"
+  ],
+  "tracingEnabled": false,
+  "wssProcessingEnabled": false,
+  "laxResolution": false,
+  "policy": {
+    "code": {
+      "All": [
+        {
+          "HardcodedResponse": {
+            "body": "headers\n${request.http.allheadervalues}",
+            "contentType": "text/plain; charset=UTF-8"
+          }
+        }
+      ]
+    }
+  }
+}
